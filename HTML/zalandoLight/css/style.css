@@ -1,5 +1,5 @@
 html {
-    font-size: 18px; /* Setter grunnstørrelsen på teksten til 18px for hele dokumentet */
+    font-size: calc(1em + 1vw); /* Setter grunnstørrelsen på teksten til 18px for hele dokumentet */
 }
 
 * {
@@ -9,6 +9,12 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif; /* Setter fontfamilien til Arial, med fallback til Helvetica og sans-serif */
 }
+
+h1{font-size: 2rem;}
+h2{font-size: 1.8rem;}
+h3{font-size: 1.6rem;}
+h4{font-size: 1.4rem;}
+p, a{font-size: 1rem;}
 
 #grid-container{
     display: grid;
@@ -128,4 +134,51 @@ img {
     box-shadow: 13px 9px 20px 0px #efefef; /* Legger til en boks-skygge for dybdeeffekt */
     border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
     padding: 1rem; /* Legger til 1rem padding på innsiden av produktkortet */
+}
+
+
+/*DESKTOP*/
+@media only screen and (min-width:800px){
+    .fa-burger {
+        display: none;
+    }
+     #menu {
+        display: flex !important;
+    }
+
+    h3{font-size: 1.2rem;}
+    p, a{font-size: 0.6rem;}
+}
+
+/*MOBIL*/
+@media only screen and (max-width:800px) {
+
+    #menu {
+        display: none;
+    }
+
+    #grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    header, main, aside, footer{
+        grid-column: 1/2;
+    }
+
+    header{
+        grid-row: 1/2;
+    }
+
+    main{
+        grid-row: 2/3;
+    }
+
+    aside{
+        display: none;
+    }
+
+    footer{
+        grid-row: 3/4;
+    }
 }

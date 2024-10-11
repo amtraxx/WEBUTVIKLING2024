@@ -6,10 +6,17 @@
     <meta charset="UTF-8">
     <!-- Angir tegnsettet som UTF-8 for å støtte de fleste språk og spesialtegn -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <!-- Gjør nettstedet responsivt, slik at det tilpasser seg ulike skjermstørrelser, som mobil og nettbrett -->
         <link href="ikoner/css/fontawesome.css" rel="stylesheet" />
         <link href="ikoner/css/brands.css" rel="stylesheet" />
         <link href="ikoner/css/solid.css" rel="stylesheet" />
+=======
+    <!-- Gjør nettstedet responsivt, slik at det tilpasser seg ulike skjermstørrelser, som mobil og nettbrett -->  
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet" />
+    <link href="ikoner/css/brands.css" rel="stylesheet" />
+    <link href="ikoner/css/solid.css" rel="stylesheet" />
+>>>>>>> bf387e30f5a22136fb864ba7c2198308813f20e5
     <link rel="stylesheet" href="css/style.css"> 
     <!-- Kobler til en ekstern CSS-fil for styling av nettstedet -->
     <title>Zalando Light | Forside</title>
@@ -143,6 +150,7 @@
         </footer>
     </div>
     <script>
+<<<<<<< HEAD
         let toggleMenu = ()=>{
             let x = document.getElementById("menu")
             if(x.style.display === "flex"){
@@ -152,5 +160,23 @@
             }
         }
     </script>
+=======
+        // Definerer en funksjon kalt toggleMenu, som brukes til å vise eller skjule menyen
+        let toggleMenu = () => {
+            // Henter elementet med id 'menu' og lagrer det i variabelen x
+            let x = document.getElementById("menu");
+    
+            // Sjekker om elementets display-stil er satt til 'flex'
+            if (x.style.display === "flex") {
+                // Hvis display er 'flex', setter vi det til 'none' for å skjule menyen
+                x.style.display = "none";
+            } else {
+                // Hvis display ikke er 'flex', setter vi det til 'flex' for å vise menyen
+                x.style.display = "flex";
+            }
+        }
+    </script>
+    
+>>>>>>> bf387e30f5a22136fb864ba7c2198308813f20e5
 </body>
 </html>

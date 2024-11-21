@@ -1,9 +1,5 @@
 html {
-<<<<<<< HEAD
     font-size: calc(1em + 1vw); /* Setter grunnstørrelsen på teksten til 18px for hele dokumentet */
-=======
-    font-size: calc(1em + 1vw); /* Setter grunnstørrelsen på teksten til 18px for hele dokumentet for å gi en standard baseline */
->>>>>>> bf387e30f5a22136fb864ba7c2198308813f20e5
 }
 
 * {
@@ -19,15 +15,12 @@ h2{font-size: 1.8rem;}
 h3{font-size: 1.6rem;}
 h4{font-size: 1.4rem;}
 p, a{font-size: 1rem;}
-<<<<<<< HEAD
 
 #grid-container{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: repeat(3, auto);
     row-gap: 2rem;
-=======
->>>>>>> bf387e30f5a22136fb864ba7c2198308813f20e5
 
 #grid-container {
     display: grid; /* Bruker CSS Grid for å sette opp en layout med rader og kolonner */
@@ -156,7 +149,6 @@ img {
     padding: 1rem; /* Legger til 1rem padding på innsiden av produktkortet */
 }
 
-<<<<<<< HEAD
 
 /*DESKTOP*/
 @media only screen and (min-width:800px){
@@ -203,49 +195,3 @@ img {
         grid-row: 3/4;
     }
 }
-=======
-/*DESKTOP*/
-@media only screen and (min-width: 800px) {
-    .fa-burger {
-        display: none; /* Skjuler hamburger-menyikonet på større skjermer */
-    }
-    #menu {
-        display: flex !important; /* Viser hovedmenyen som en flexbox på større skjermer */
-    }
-
-    h3{font-size: 1.2rem;}
-    p, a {font-size: 0.6rem;}
-}
-
-/*MOBIL*/
-@media only screen and (max-width: 800px) {
-    #menu {
-        display: none; /* Skjuler hovedmenyen på mindre skjermer */
-    }
-
-    #grid-container {
-        grid-template-columns: 1fr; /* Endrer layout til én kolonne på mobil */
-        grid-template-rows: auto auto auto auto; /* Setter fire rader for responsiv oppsett */
-    }
-
-    header, main, aside, footer {
-        grid-column: 1/2; /* Sørger for at alle elementer strekker seg over hele bredden på mindre skjermer */
-    }
-
-    header {
-        grid-row: 1/2; /* Plasserer headeren øverst på siden */
-    }
-    
-    main {
-        grid-row: 2/3; /* Plasserer hovedinnholdet i andre rad */
-    }
-    
-    aside {
-        display: none; /* Skjuler sideinnholdet (aside) på mindre skjermer */
-    }
-    
-    footer {
-        grid-row: 3/4; /* Plasserer fotnoten nederst på siden */
-    }
-}
->>>>>>> bf387e30f5a22136fb864ba7c2198308813f20e5
